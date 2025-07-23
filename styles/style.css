@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* .inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: ;
+  font-style: normal;
+}
+
+.noto-serif {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: ;
+  font-style: normal;
+  
+} */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: #f5f8ff;
+}
+/* nav section start */
+nav {
+  max-width: 1140px;
+  /* width: 1140px;
+  height: 70px; */
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  padding-bottom: 120px;
+}
+.nav-item,
+.item-nav,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: rgb(137, 135, 161);
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  display: flex;
+  padding-left: 40px;
+}
+ul,
+li,
+a:hover {
+  color: rgb(37, 36, 50);
+}
+/* banner section start */
+.banner {
+  max-width: 1140px;
+  /* width: 1140px;
+  height: 461px; */
+  margin: 0 auto;
+  display: flex;
+  padding-bottom: 120px;
+  /* border: 1px solid black; */
+}
+.font-color {
+  color: rgb(233, 90, 8);
+}
+.banner-title {
+  font-family: "Noto Serif", serif;
+  font-size: 4rem;
+  font-weight: 700;
+  padding-top: 60px;
+  padding-bottom: 13px;
+}
+.banner-description {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+/*Plants Section start   */
+.plants-content {
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+}
+.plants-title {
+  font-family: "Noto Serif", serif;
+  font-size: 3rem;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+.plants-description {
+  width: 888px;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin: 0 auto;
+}
+.cards {
+  width: 1140px;
+  height: 1000px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.cards-item {
+  width: 270px;
+  height: 485px;
+}
+.card-title {
+  color: rgb(17, 17, 17);
+  font-family: "Inter", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.card-price {
+  color: rgb(17, 17, 17);
+  font-family: "Inter", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.card-btn {
+  width: 270px;
+  height: 50px;
+  color: rgb(255, 255, 255);
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  background: rgb(233, 90, 8);
+  border: none;
+}
+/* Plants Lover Section start */
+.plants-lover {
+  width: 1140px;
+  height: 597px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+.plants-lover-content {
+  width: 540px;
+  height: 521px;
+}
+.flower-text {
+  color: rgb(0, 0, 0);
+  font-family: "Noto Serif", serif;
+  font-size: 3.15rem;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.lover-li {
+  padding-left: 25px;
+}
+.list-one {
+  color: #7a7c7f;
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+/* Join Section start  */
+/* .join-part {
+  background-image: url(../assets/news-letter-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.join-colorful {
+  color: rgb(255, 255, 255);
+  font-family: "Noto Serif", serif;
+  font-size: 3.15rem;
+  font-weight: 700;
+}
+.join-input {
+  width: 644px;
+  height: 50px;
+}
+.subscribe {
+  background-color: rgb(233, 90, 8);
+} */
+/* Footer Section start*/
+.foo-ter {
+  width: 1120px;
+  height: 248px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+.footer-text {
+  width: 330px;
+  height: 81px;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Inter", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  padding-top: 16px;
+}
+.footer-list {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+/* media query start */
+@media screen and (max-width: 576px) {
+  nav {
+    width: 360px;
+    margin: 0 auto;
+  }
+  .nav-item {
+    flex-direction: column;
+  }
+  .item-nav {
+    display: none;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner-image,
+  img {
+    width: 100%;
+  }
+  .plants-content {
+    max-width: 576px;
+  }
+  .plants-description {
+    width: 0px;
+  }
+  .cards {
+    width: 0px;
+    height: 0px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
