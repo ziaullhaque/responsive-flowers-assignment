@@ -20,6 +20,7 @@
 }
 body {
   background-color: #f5f8ff;
+  overflow-x: hidden;
 }
 /* nav section start */
 nav {
@@ -141,14 +142,16 @@ a:hover {
   width: 1140px;
   /* height: 597px; */
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding-top: 200px;
-  padding-bottom: 100px;
+  /* justify-content: space-between; */
+  margin: auto;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  border: 1px solid tomato;
+  gap: 60px;
 }
 .plants-lover-image {
   width: 540px;
-  /* height: 597px; */
+  height: 597px;
 }
 .flower-store {
   position: absolute;
@@ -163,6 +166,10 @@ a:hover {
   /* margin-top: -300px;
   margin-left: 380px; */
 }
+/* .trusted:hover {
+  transform: rotate(360deg);
+  transition: 3s;
+} */
 .plants-lover-content {
   width: 540px;
   /* height: 521px; */
@@ -433,27 +440,26 @@ a:hover {
   .plants-lover {
     width: 100%;
     flex-direction: column;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    margin: auto;
+    gap: 0px;
   }
-  /* .plants-lover-image {
-    width: 100%;
-  } */
-  .flower-store {
+  .plants-lover-image,
+  img {
     width: 100%;
   }
+
   .trusted {
     display: none;
   }
   .plants-lover-content {
-    width: 80%;
-    padding-top: 500px;
+    width: 100%;
+    /* padding-top: 500px; */
   }
   .flower-text {
     font-size: 1.15rem;
   }
   .lover-li {
-    width: 100%;
+    width: auto;
   }
 
   /* Latest Deal Section start */
