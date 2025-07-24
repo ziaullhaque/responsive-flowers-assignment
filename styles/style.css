@@ -75,27 +75,13 @@ a:hover {
   font-weight: 400;
 }
 /* Plants Section start   */
-.plants-lover {
-  padding-bottom: 100px;
-}
+
 .plants-content {
   max-width: 1140px;
   margin: 0 auto;
   text-align: center;
 }
-.flower-store {
-  position: absolute;
-}
-.trusted {
-  width: 286px;
-  height: 286px;
-  position: relative;
-  margin-left: 360px;
-  margin-top: -100px;
 
-  /* margin-top: -300px;
-  margin-left: 380px; */
-}
 .plants-title {
   font-family: "Noto Serif", serif;
   font-size: 3rem;
@@ -150,6 +136,7 @@ a:hover {
   border: none;
 }
 /* Plants Lover Section start */
+
 .plants-lover {
   width: 1140px;
   height: 597px;
@@ -157,10 +144,29 @@ a:hover {
   justify-content: space-between;
   margin: 0 auto;
   padding-top: 200px;
+  padding-bottom: 100px;
+}
+.plants-lover-image {
+  width: 540px;
+  height: 597px;
+}
+.flower-store {
+  position: absolute;
+}
+.trusted {
+  width: 286px;
+  height: 286px;
+  position: relative;
+  margin-left: 360px;
+  margin-top: -100px;
+
+  /* margin-top: -300px;
+  margin-left: 380px; */
 }
 .plants-lover-content {
   width: 540px;
   height: 521px;
+  padding-top: 50px;
 }
 .flower-text {
   color: rgb(0, 0, 0);
@@ -168,9 +174,12 @@ a:hover {
   font-size: 3.15rem;
   font-weight: 700;
   padding-bottom: 20px;
+  padding-left: 30px;
 }
 .lover-li {
-  padding-left: 25px;
+  width: 430px;
+  height: 108px;
+  padding-left: 60px;
 }
 .list-one {
   color: #7a7c7f;
@@ -367,10 +376,18 @@ a:hover {
   margin-bottom: 25px;
 }
 /* media query start */
+.hide {
+  display: none;
+}
 @media screen and (max-width: 576px) {
+  /* header section start */
   nav {
     width: 360px;
     margin: 0 auto;
+    padding-bottom: 10px;
+  }
+  .logo img {
+    width: 50%;
   }
   .nav-item {
     flex-direction: column;
@@ -381,13 +398,125 @@ a:hover {
   .banner {
     flex-direction: column-reverse;
   }
+  .banner-title {
+    font-size: 2.5rem;
+    padding-top: 10px;
+  }
+  .banner-content {
+    margin: 0px 16px;
+    /* padding: 0px 16px; */
+  }
   .banner-image,
   img {
     width: 100%;
   }
-  .plants-content {
-    max-width: 576px;
+  /* Plants Section start  */
+
+  .plants-description {
+    width: 336px;
   }
+
+  .cards {
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 50px;
+  }
+  .card-btn {
+    width: 100%;
+  }
+  .cards-item {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Join Section start */
+  .join-part {
+    width: 100%;
+  }
+  .join-colorful {
+    font-size: 1.25rem;
+  }
+  .join-input {
+    width: 218px;
+    height: 50px;
+  }
+
+  .subscribe {
+    width: 103px;
+    height: 50px;
+  }
+
+  /* Footer Section start */
+  .foo-ter {
+    width: 100%;
+    flex-direction: column;
+  }
+  .footer-content {
+    margin-left: 20px;
+  }
+  .footer-logo {
+    width: 15%;
+  }
+  .footer-text {
+    width: 350px;
+  }
+  .footer-list a {
+    margin-left: -20px;
+  }
+  .footer-image {
+    width: 5%;
+    display: flex;
+    margin-left: 18px;
+  }
+  .image-icon {
+    padding-right: 15px;
+  }
+  /* .latest-deal {
+    width: 361px;
+  } */
+  .images {
+    flex-direction: column;
+  }
+
+  /* .one-image {
+    width: 366px;
+    height: 206px;
+    margin-left: 0px;
+    background-image: url(../assets/deal-zabo.png);
+  }
+  .one-image::before {
+    width: 366px;
+    height: 206px;
+    border-radius: 10px;
+  } */
+  /* .one-image,
+  .image-title-one,
+  .image-description-one {
+    display: none;
+  } */
+  /* .image-title-one {
+    color: rgb(255, 255, 255);
+    font-family: "Noto Serif", serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: absolute;
+    margin: 170px 160px 0px;
+  }
+  .image-description-one {
+    color: rgb(255, 255, 255);
+    font-family: "Inter", sans-serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+    position: absolute;
+    margin: 250px 290px 0px;
+  } */
+  /*  */
+  /* .plants-content {
+    max-width: 0px;
+  }
+
   .plants-description {
     width: 0px;
   }
@@ -395,5 +524,31 @@ a:hover {
     width: 0px;
     height: 0px;
     grid-template-columns: repeat(2, 1fr);
+  } */
+  /* .trusted {
+    display: none;
   }
+  .plants-lover {
+    width: 0px;
+    height: 0px;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .plants-lover-image {
+    width: 100%;
+    height: 0px;
+    padding-bottom: 500px;
+  }
+
+  .plants-lover-content {
+    width: 361px;
+    height: 234px;
+    padding-top: 0px;
+  }
+
+  .lover-li {
+    width: 361px;
+    height: 234px;
+    padding-left: 0px;
+  } */
 }
